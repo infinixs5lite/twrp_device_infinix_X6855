@@ -39,5 +39,5 @@ Works:
 _Lunch_ command :
 
 ```
-lunch twrp_X6855-eng && mka adbd vendorbootimage
+lunch pb_X6855-userdebug && mka adbd vendorbootimage
 ```

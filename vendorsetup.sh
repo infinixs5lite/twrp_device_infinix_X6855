@@ -48,9 +48,6 @@ fi
 
 export LC_ALL="C"
 
-# Clone to fix build on minimal manifest
-git clone https://android.googlesource.com/platform/external/gflags/ -b android-12.1.0_r4 external/gflags
-
 # Patches
 RET=0
 cd bootable/recovery
@@ -63,49 +60,3 @@ else
 fi
 
 echo "Andriana has touched your build"
-
-
-# --- COLOR PALETTE ---
-RED='\033[1;31m'       # Bold Crimson
-CYAN='\033[1;36m'      # Electric Cyan
-WHITE='\033[1;37m'     # Stark White
-GRAY='\033[0;90m'      # Dark Slate
-NC='\033[0m'           # Reset
-
-clear
-
-# --- GRAYRAVENS HEADER (RED) ---
-echo -e "${RED}"
-echo " ██████╗ ██████╗  █████╗ ██╗   ██╗██████╗  █████╗ ██╗   ██╗███████╗███╗   ██╗"
-echo "██╔════╝ ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║"
-echo "██║  ███╗██████╔╝███████║ ╚████╔╝ ██████╔╝███████║██║   ██║█████╗  ██╔██╗ ██║"
-echo "██║   ██║██╔══██╗██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║"
-echo "╚██████╔╝██║  ██║██║  ██║   ██║   ██║  ██║██║  ██║ ╚████╔╝ ███████╗██║ ╚████║"
-echo " ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝"
-
-# --- SHADOWBYTEPRJKT HEADER (CYAN) ---
-echo -e "${CYAN}"
-echo "███████╗██╗  ██╗ █████╗ ██████╗  ██████╗ ██╗    ██╗██████╗ ██╗   ██╗████████╗███████╗"
-echo "██╔════╝██║  ██║██╔══██╗██╔══██╗██╔═══██╗██║    ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝"
-echo "███████╗███████║███████║██║  ██║██║   ██║██║ █╗ ██║██████╔╝ ╚████╔╝    ██║   █████╗  "
-echo "╚════██║██╔══██║██╔══██║██║  ██║██║   ██║██║███╗██║██╔══██╗  ╚██╔╝     ██║   ██╔══╝  "
-echo "███████║██║  ██║██║  ██║██████╔╝╚██████╔╝╚███╔███╔╝██████╔╝   ██║      ██║   ███████╗"
-echo "╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚══╝╚══╝ ╚═════╝    ╚═╝      ╚═╝   ╚══════╝"
-echo -e "${NC}"
-
-# --- SYSTEM TELEMETRY ---
-echo -e "${GRAY}─────────────────────────────────────────────────────────────────────────────────────────${NC}"
-printf "${RED}» OPERATOR:${NC} %-18s ${CYAN}» NODE:${NC} %-18s ${WHITE}» STATUS:${NC} ONLINE\n" "XTENSEI" "ShadowbytePjkt"
-printf "${RED}» TARGET:${NC}   %-18s ${CYAN}» BRANCH:${NC} %-18s ${WHITE}» ARCH:${NC}   ARM64\n" "INFINIX-X6855" "pbrp-12.1"
-echo -e "${GRAY}─────────────────────────────────────────────────────────────────────────────────────────${NC}"
-
-# --- ADDITIONAL INFO ---
-echo -e "\n${WHITE}[ ADDITIONAL INFORMATION ]${NC}"
-echo -e "${GRAY}┌───────────────────────────────────────────────────────────────────────────────────────┐${NC}"
-echo -e "  ${RED}■${NC} ${WHITE}REPOSITORY:${NC}  https://github.com/XTENSEI/twrp_device_infinix_X6855.git"
-echo -e "  ${RED}■${NC} ${WHITE}TEAM:${NC}        #GRAYRAVENSTEAM x ShadowBytePrjkt"
-echo -e "  ${CYAN}■${NC} ${WHITE}NOTICE:${NC}      ROZEN DOES NOT REPRESENT ME"
-echo -e "${GRAY}└───────────────────────────────────────────────────────────────────────────────────────┘${NC}"
-
-# --- QUOTE SECTION (MEDIUM FONT) ---
-echo -e "\n${WHITE}      \"Compiled In Silence, Released Among the Stars\"${NC}\n"

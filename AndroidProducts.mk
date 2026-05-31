@@ -8,4 +8,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/pb_X6855.mk
 
 COMMON_LUNCH_CHOICES := \
-    pb_X6855-userdebug
+    pb_X6855-eng

@@ -12,11 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Product Specifics
-PRODUCT_NAME := pb_X6855
 PRODUCT_DEVICE := X6855
-PRODUCT_BRAND := Infinix
+PRODUCT_NAME := pb_X6855
+PRODUCT_BRAND := INFINIX
 PRODUCT_MODEL := Infinix X6855
-PRODUCT_MANUFACTURER := INFINIX
+PRODUCT_MANUFACTURER := infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
